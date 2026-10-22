@@ -29,6 +29,6 @@ router.register('event',EventViewSet,basename="event")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('token/',obtain_auth_token),
+    path('token',obtain_auth_token),
     path('history/',BookingHistory.as_view())
 ]+router.urls
